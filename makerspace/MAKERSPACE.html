@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Roboto+Condensed:ital,wght@0,100..900;1,100..900|Roboto:ital,wght@0,100..900;1,100..900">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAKERSPACE</title>
+
+    <style>
+        #whole{
+            flex-wrap: wrap;
+            display: flex;
+            font-family: Roboto;
+        }
+
+        #pg1{
+            background-image: url(formula1.jpg);
+            background-size: cover;
+            color: white;
+            width: 100%;
+            height: 70%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        #wlcm{
+            text-align: center;
+            color: white;
+            width: 45%;
+            top: 100px;
+            height: 350px;
+            position: absolute;
+            margin-left: 27.5%;
+            margin-right: 27.5%;
+        }
+
+        #headd{
+            top: 20px;
+            position: absolute;
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+
+        }
+
+        #hook{
+            top: 200px;
+            position: absolute;
+            height: 400px;
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        #hooktxt{
+            width: 500px;
+            height: 400px;
+            float: left;
+            text-align: left;
+            font-size: 28px;
+            color: grey;
+        }
+
+        #hookpic{
+            border-radius: 30px;
+            width: 500px;
+            height: 400px;
+            float: right;
+        }
+
+        #logo{
+            width: 300px;
+            height: 50px;
+            float: left;
+            z-index: 2;
+
+        }
+
+        #logo2{
+            width:30%;
+            height: 50px;
+            float: left;
+            z-index: 2;
+
+
+        }
+
+        #adr{
+            width: 50%;
+            height: 100px;
+            float: left;
+            color: white;
+            margin-left: 50px;
+            font-size: 24px;
+            line-height: 1.5;
+        }
+
+        #statusbar{
+            position: relative;
+            width: 350px;
+            height: 50px;
+            float: right;
+            display: flex;
+            align-items: center; 
+            justify-content: left;
+            text-align: center;
+            z-index: 2;
+            gap: 10px;
+
+        }
+
+        #statusbar div{
+            width: 33%;
+            color: white;
+            height: 50px;
+
+        }
+
+        #statusbar2{
+            position: relative;
+            width: 60%;
+            height: 50px;
+            float: right;
+            display: flex;
+            align-items: center; 
+            justify-content: left;
+            text-align: center;
+            z-index: 2;
+            gap: 10px;
+
+        }
+
+
+        #statusbar2 div{
+            width: 20%;
+            color: white;
+            height: 50px;
+
+        }
+
+        #statusbar3{
+            margin-top: 25px;
+            position: relative;
+            width: 20%;
+            height: 50px;
+            float: right;
+            display: flex;
+            align-items: center; 
+            justify-content: left;
+            text-align: center;
+            z-index: 2;
+
+        }
+
+
+        #statusbar3 div{
+            width: 20%;
+            color: white;
+            height: 50px;
+
+        }
+
+        #statbar:hover{
+            background-color: white;
+            color: black;
+        }
+
+        #midfloaty{
+            box-shadow: 4px 8px 8px 4px rgba(0.5,0.5,0.5,0.5);
+            border-radius: 30px;
+            color: #6239AF;
+            background-color: white;
+            width: 60%;
+            height: 200px;
+            margin-left: 20%;
+            margin-right: 20%;
+            z-index: 2;
+            position: absolute;
+            top:510px;
+            left: 0;
+        }
+
+        #pg2{
+            background-color: white;
+            color: white;
+            width: 100%;
+            height: 350%;
+            position: absolute;
+            top: 70%;
+            left: 0;
+            z-index: 0;
+        }
+
+        #pg3{
+            background-color: #CE7D0D;
+            left: 0;
+            top: 450%;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        #pg4{
+            background-image: url(purp.jpg);
+            background-size: cover;
+            left: 0;
+            top: 550%;
+            height: 150%;
+            width: 100%;
+            position: absolute;
+        }
+
+        .cardcontainer{
+            top:700px;
+            width: 90%;
+            gap: 50px;
+            width: 100%;
+            height: auto;
+            position: relative;
+            display: flex;
+            justify-content: left;
+            align-items: center; 
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            width: 260px;
+            height: 320px;
+            border-radius: 20px;
+            position: relative;
+            padding: 20px;
+            background-color: #F5F5F5;
+            color: grey;
+        }
+
+        #sltn{
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            position: absolute;
+            top: 1100px;
+            height: 500px;
+        }
+
+        #sltntxt{
+            width: 60%;
+            background-color: #6239AF;
+            float: left;
+            height: 350px;
+            border-bottom-left-radius: 25px;
+            border-top-left-radius: 25px;
+            color: white;
+        }
+
+        #sltnpic{
+            width: 40%;
+            background-color: #6239AF;
+            float: right;
+            height: 350px;
+            text-align: center;
+            border-bottom-right-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+
+        #ourcomp{
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            position: absolute;
+            top: 1500px;
+            text-align: left;
+            font-size: 40px;
+            color: orange;
+        }
+
+        #numvlp{
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            position: absolute;
+            top: 1700px;
+            height: 400px;
+            display: flex;
+        }
+
+        #numvlp2{
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            position: absolute;
+            top: 2200px;
+            height: 400px;
+            display: flex;
+        }
+
+        #numvlpnum{
+
+            width: 30%;
+            background-color: white;
+            float: left;
+            color: black;
+            font-size: 400px;
+            height: 400px;
+            text-align: center;
+            z-index: 0;
+            position: absolute;
+
+        }
+
+        #numvlpbox{
+            position: absolute;
+            width: 80%;
+            background-color: white;
+            box-shadow: 4px 8px 8px 4px rgba(0.5,0.5,0.5,0.5);
+            left: 200px;
+            color: black;
+            height: 400px;
+            z-index: 1;
+            border-radius: 50px;
+            padding-top: 4%;
+        }
+
+        #numvlptxt{
+            float: left;
+            width: 50%;
+            background-color: white;
+            height: 350px;
+
+        }
+        #numvlpic{
+            
+            float: right;
+            width: 40%;
+            background-color: grey;
+            height: 350px;
+            top: 10%;
+            margin-right: 5%;
+            border-radius: 30px;
+        }
+
+        #pstspnsrs{
+            background-color: grey;
+            width: 90%;
+            height: 400px;
+            top: 2700px;
+            margin-left: 5%;
+            margin-right: 5%;
+            position: absolute;
+        }
+
+        #wpas{
+            background-color: #CE7D0D;
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            height: 100px;
+            position: absolute;
+            top: 50px;
+            color: white;
+            text-align: center;
+            line-height: 0.5px;
+        }
+
+        #cardwpas1{
+            background-color: #CE7D0D;
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            height: 320px;
+            position: relative;
+            top: 200px;
+            display: flex;
+            justify-content: left;
+            align-items: center; 
+        }
+
+        #cardwpas2{
+            background-color: #CE7D0D;
+            width: 90%;
+            top: 200px;
+            margin-left: 5%;
+            margin-right: 5%;
+            height: 300px;
+            position: relative;
+            display: flex;
+            justify-content: left;
+            align-items: center; 
+        }
+
+        .quote {
+            width: 30%;
+            height: 260px;
+            border-radius: 15px;
+            padding: 20px;
+            position: relative;
+            background-color: #86520B;
+            color: white;
+            margin-left: 1.25%;
+            margin-right: 1.25%;
+            justify-content: center;
+            text-align: center;
+            font-size: 20px;
+            line-height: 1.5;
+
+        }
+
+        .quote2 {
+            width: 45%;
+            height: 200px;
+            border-radius: 15px;
+            position: relative;
+            padding: 20px;  
+            background-color: #86520B;
+            color: white;
+            margin-left: 1.25%;
+            margin-right: 1.25%;
+            justify-content: center;
+            text-align: center;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+        #cent{
+            background-image: url(orangeswirl.png);
+            background-size: 1375px 550px;
+            background-repeat: no-repeat;
+            width: 90%;
+            height: 550px;
+            top: 75px;
+            border-radius: 50px;
+            margin-left: 5%;
+            margin-right: 5%;
+            position: absolute;
+            text-align: center;
+
+        }
+
+        #extinfo{
+            width: 90%;
+            height: 350px;
+            top: 700px;
+            margin-left: 5%;
+            margin-right: 5%;
+            position: absolute;
+
+        }
+
+
+        .cardicons img{
+            width: 280px;
+            margin-left: -2.5%;
+        }
+
+        .cardtext{
+            line-height: 1.25;
+            font-size: 17px;
+        }
+
+        #carditle{
+            color: orange;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        #yelp{
+            height: 33%;
+            width: 100%;
+           
+        }
+        #contacts{
+            height: 33%;
+            width: 100%;
+            
+        }
+        #rights{
+            height: 33%;
+            width: 100%;
+            color: white;
+            font-size: 20px;
+
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <div id = "whole">
+
+        <div id="pg1">
+
+
+
+            <div id="headd">
+                <div id="logo"><img src="logo.png" style="width:300px;height: 50px;"></div>
+                <div id="statusbar">
+                    <div id="statbar"><p>HOME</p></div>
+                    <div id="statbar"><P>EVENTS</P></div>
+                    <div id="statbar"><p>ABOUT US</p></div>
+                </div>
+            </div>
+
+            <div id="wlcm">
+                <b><p style="font-size: 48px;">More Than Robots</p></b>
+                <b><p style="font-size: 48px;margin-top: -50px;color: orange;">A Movement</p></b>
+                <p style="font-size:20px; margin-top:-25px;">SST Makerspace is your launchpad for building change.<br>Come explore, build, and experience what happens when creativity meets engineering.</p>
+            </div>
+
+        </div>
+
+        <div id="midfloaty"></div>
+
+        <div id="pg2">
+
+            <div id="hook">
+                <div id="hooktxt">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div id="hookpic"><img src="event.png" alt="Avatar" style="width:500px; height: 400px;"></div>
+            </div>
+
+            <div class="cardcontainer">
+                <div class="card">
+                    <div class = cardicons>
+                        <img src="pic1.png" alt="Avatar">
+                    </div> 
+
+                    <div class="cardtext">
+                        <p id="carditle">Experiential Learning</p>
+                        <p>This is done through our competitions and workshops during which participants gain hands-on experience with various devices.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class = cardicons>
+                        <img src="pic2.png" alt="Avatar">
+                    </div> 
+
+                    <div class="cardtext">
+                        <p id="carditle">Discipline Collaboration</p>
+                        <p>Our competitions and workshops welcome participants from diverse tech-related disciplines such as Computer Science and Engineering.</p>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <div class = cardicons>
+                        <img src="pic3.png" alt="Avatar">
+                    </div> 
+
+                    <div class="cardtext">
+                        <p id="carditle">Fun & Engaging</p>
+                        <p>Participants and audiences enjoy a race-style format, ensuring the experience is both fun and engaging.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class = cardicons>
+                        <img src="pic4.png" alt="Avatar">
+                    </div> 
+
+                    <div class="cardtext">
+                        <p id="carditle">Impact-Oriented Thinking</p>
+                        <p>By addressing socially relevant problems, Makerspace fosters innovation that contributes to Africa’s development beyond the classroom.</p>
+                    </div>
+                </div>
+            </div>  
+
+            <div id="sltn">
+                <div id="sltntxt">
+                    <b><p style="margin-left:50px;font-size: 42px;">Hardware Solutions Used By Our Participants</p></b>
+                    <p style="margin-left:50px;font-size:24px;line-height: 1.25;">Participants at SST Makerspace work with real hardware tools like Arduino and ESP32 microcontrollers, motor drivers, sensors, and wireless modules to build functional, remote-controlled robots. They also use 3D-printed parts, grippers, and batteries to simulate real industrial applications.</p>
+                </div>
+                <div id="sltnpic"><img src="sltns.png" alt="Avatar" style="width:450px; height: 350px;"></div>
+            </div>
+
+            <div id= "ourcomp"><b><p>OUR COMPETITIONS</p></b></div>
+
+            <div id="numvlp">
+                <div id="numvlpnum"><b><p style="margin-top: -25px;">1</p></b></div>
+                <div id="numvlpbox">
+                    <div id="numvlptxt">
+                        <p style="color: #6239AF; font-size:48px;margin-left: 50px;line-height:0.5">MotoBot Competition</p>
+                        <p style="color: grey;font-size: 20px;margin-left: 50px; margin-top:-25px">The Future of Work 2024</p>
+                        <p style="color:grey; font-size:24px;margin-left:50px;margin-top: 25px;line-height: 1.25;">Participants designed wireless-controlled vehicles called motobots. These motobots were tested for their speed and steering accuracy in a competitive setting.</p>
+                    </div>
+                    <div id="numvlpic"><img src="race.png" alt="Avatar" style="width:100%; height: 100%;"></div>
+                </div>
+            </div>
+
+            <div id="numvlp2">
+                <div id="numvlpnum"><b><p style="margin-top: -25px;">2</p></b></div>
+                <div id="numvlpbox">
+                    <div id="numvlptxt">
+                        <p style="color: #6239AF; font-size:48px;margin-left: 50px;line-height:0.5">GripperBot Competition</p>
+                        <p style="color: grey;font-size: 20px;margin-left: 50px; margin-top:-25px">The Future of Work 2025</p>
+                        <p style="color:grey; font-size:24px;margin-left:50px;margin-top: 25px;line-height: 1.25;">This competition aimed to address labor challenges in Africa. Participants designed motobots equipped with grippers to assist in lifting heavy loads manually.</p>
+                    </div>
+                    <div id="numvlpic"><img src="arm.png" alt="Avatar" style="width:101%; height: 100%;"></div>
+                </div>
+            </div>
+
+            <div id="pstspnsrs"></div>
+
+
+
+        </div>
+
+        <div id="pg3">
+            <div id="wpas">
+                <b><p style="font-size: 40px;">What People Are Saying</p></b>
+                <p>Reviews From SST Motobot Competition 2024</p>
+            </div>
+            <div id="cardwpas1">
+                <div class="quote">
+                    <img src="quote.png" style="width:25px; height: 25px;">
+
+                    <p style="margin-left: 35px;margin-right: 35px;">Our Engineering students hosted the Motobot showcasing their innovative and problem-solving skills.</p>
+
+                    <img src="circle.png" style="width:50px; height: 50px;">
+
+                    <p style="margin-top: -10px;">Dr. Darlington Agholor</p>
+                    <p style="margin-top: -25px">Dean, SST</p>
+                </div>
+                <div class="quote">
+                    <img src="quote.png" style="width:25px; height: 25px;">
+
+                    <p style="margin-left: 35px;margin-right: 35px;">This is beautiful and fantastic. And to think that it was entirely organised by students.</p>
+
+                    <img src="circle.png" style="width:50px; height: 50px;">
+
+                    <p style="margin-top: -10px;">Dr. Darlington Agholor</p>
+                    <p style="margin-top: -25px">Dean, SST</p>
+                </div>
+                <div class="quote">
+                    <img src="quote.png" style="width:25px; height: 25px;">
+                    <p style="margin-left: 35px;margin-right: 35px;">Amazing execution. We are definitely investing our hardware resources in this in coming sessions.</p>
+                    <img src="circle.png" style="width:50px; height: 50px;">
+                    <p>Dr. Darlington Agholor</p>
+                    <p>Dean, SST</p>
+                </div>
+                
+            </div>
+            <div id="cardwpas2">
+                <div class="quote2">
+                    <img src="quote.png" style="width:25px; height: 25px;">
+                    <p style="margin-left: 35px;margin-right: 35px;margin-top: 1px;">Our Engineering students hosted the Motobot showcasing their innovative and problem-solving skills.</p>
+                    <img src="circle.png" style="width:50px; height: 50px;">
+                    <p style="margin-top: -10px;">Dr. Darlington Agholor</p>
+                    <p style="margin-top: -25px">Dean, SST</p>
+                </div>
+                <div class="quote2">
+                    <img src="quote.png" style="width:25px; height: 25px;">
+                    <p style="margin-left: 35px;margin-right: 35px;margin-top: 1px;">Our Engineering students hosted the Motobot showcasing their innovative and problem-solving skills.</p>
+                    <img src="circle.png" style="width:50px; height: 50px;">
+                    <p style="margin-top: -10px;">Dr. Darlington Agholor</p>
+                    <p style="margin-top: -25px">Dean, SST</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="pg4">
+            <div id="cent">
+                <b><p style="font-size:56px;color: #6239AF;margin-top: 100px;">Ready to make a change?</p></b>
+                <p style="font-size:28px;color:grey ;margin-top: 75px;">Let us join hands in inspiring the young minds that will go on to<br> transform the hardware space, building products that can<br>compete in the global market.</p>
+            </div>
+
+            <div id="extinfo">
+                <div id="yelp">
+                    <div id="logo2"><img src="logo.png" style="width:300px;height: 50px;"></div>
+
+                    <div id="statusbar2">
+                        <div id="statbar"><p>HELPCENTER</p></div>
+                        <div id="statbar"><P>TERMS</P></div>
+                        <div id="statbar"><p>PRIVACY</p></div>
+                        <div id="statbar"><p>COMMUNITY</p></div>
+                        <div id="statbar"><p>UNSUBSCRIBE</p></div>
+                    </div>
+                </div>
+                <div id="contacts">
+                    <div id="adr"><p>KM 52, Ibeju-Lekki Expressway, Lagos <br>+234 575 4849 393</p></div>
+
+                    <div id="statusbar3">
+                        <div id="statbar"><img src="fb.png" style="width:25px;height: 25px;"></div>
+                        <div id="statbar"><img src="ig.png" style="width:25px;height: 25px;"></div>
+                        <div id="statbar"><img src="twt.png" style="width:25px;height: 25px;"></div>
+                        <div id="statbar"><img src="lkdn.png" style="width:25px;height: 25px;"></div>
+                        <div id="statbar"><img src="yt.png" style="width:25px;height: 25px;"></div>
+                    </div>                    
+                </div>
+                <div id="rights"><p>©2025 SST-Makerspace, Pan-Atlantic University. All Rights Reserved</p></div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+</body>
+
+</html>
+
+
+
+

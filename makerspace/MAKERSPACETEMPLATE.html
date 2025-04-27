@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAKERSPACE</title>
+
+    <style>
+        #whole{
+            flex-wrap: wrap;
+            display: flex;
+        }
+
+        #pg1{
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 70%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        #wlcm{
+            background-color: grey;
+            color: white;
+            width: 45%;
+            top: 150px;
+            height: 300px;
+            position: absolute;
+            margin-left: 27.5%;
+            margin-right: 27.5%;
+        }
+
+        #headd{
+            top: 20px;
+            position: absolute;
+            background-color: white;
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        #hook{
+            top: 200px;
+            position: absolute;
+            background-color: white;
+            height: 400px;
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        #hooktxt{
+            background-color: grey;
+            width: 500px;
+            height: 400px;
+            float: left;
+        }
+
+        #hookpic{
+            background-color: grey;
+            width: 500px;
+            height: 400px;
+            float: right;
+        }
+
+        #logo{
+            background-color: grey;
+            width: 300px;
+            height: 50px;
+            float: left;
+
+        }
+
+        #statusbar{
+            background-color: grey;
+            width: 300px;
+            height: 50px;
+            float: right;
+
+        }
+
+        #midfloaty{
+            color: purple;
+            background-color: blue;
+            width: 60%;
+            height: 200px;
+            margin-left: 20%;
+            margin-right: 20%;
+            z-index: 1;
+            position: absolute;
+            top:510px;
+            left: 0;
+        }
+
+        #pg2{
+            background-color: green;
+            color: white;
+            width: 100%;
+            height: 350%;
+            position: absolute;
+            top: 70%;
+            left: 0;
+            z-index: 0;
+        }
+
+        #pg3{
+            background-color: yellow;
+            left: 0;
+            top: 420%;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        #pg4{
+            background-color: purple;
+            left: 0;
+            top: 520%;
+            height: 150%;
+            width: 100%;
+            position: absolute;
+        }
+
+        .cardcontainer{
+            top:700px;
+            width: 90%;
+            gap: 50px;
+            width: 100%;
+            height: auto;
+            position: relative;
+            display: flex;
+            justify-content: left;
+            align-items: center; 
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            width: 260px;
+            height: 300px;
+            border-radius: 5px;
+            position: relative;
+            padding: 20px;
+            background-color: white;
+            color: purple;
+        }
+
+        #sltn{
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            background-color: grey;
+            position: absolute;
+            top: 1100px;
+            height: 300px;
+        }
+
+        #sltntxt{
+            width: 60%;
+            background-color: purple;
+            float: left;
+            height: 300px;
+        }
+
+        #sltnpic{
+            width: 30%;
+            background-color: pink;
+            float: right;
+            height: 300px;
+        }
+
+        #numvlp{
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            background-color: grey;
+            position: absolute;
+            top: 1500px;
+            height: 400px;
+            display: flex;
+        }
+
+        #numvlp2{
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            background-color: grey;
+            position: absolute;
+            top: 2000px;
+            height: 400px;
+            display: flex;
+        }
+
+        #numvlpnum{
+
+            width: 30%;
+            background-color: white;
+            float: left;
+            color: black;
+            font-size: 400px;
+            height: 400px;
+            text-align: center;
+            z-index: 0;
+            position: absolute;
+
+        }
+
+        #numvlpbox{
+            position: absolute;
+            width: 80%;
+            background-color: orange;
+            left: 200px;
+            color: black;
+            height: 400px;
+            z-index: 1;
+        }
+
+        #pstspnsrs{
+            background-color: grey;
+            width: 90%;
+            height: 400px;
+            top: 2500px;
+            margin-left: 5%;
+            margin-right: 5%;
+            position: absolute;
+        }
+
+        #wpas{
+            background-color: orange;
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            height: 100px;
+            position: absolute;
+            top: 50px;
+        }
+
+        #cardwpas1{
+            background-color: orange;
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            height: 320px;
+            position: relative;
+            top: 200px;
+            display: flex;
+            justify-content: left;
+            align-items: center; 
+        }
+
+        #cardwpas2{
+            background-color: orange;
+            width: 90%;
+            top: 200px;
+            margin-left: 5%;
+            margin-right: 5%;
+            height: 300px;
+            position: relative;
+            display: flex;
+            justify-content: left;
+            align-items: center; 
+        }
+
+        .quote {
+            width: 30%;
+            height: 260px;
+            border-radius: 5px;
+            padding: 20px;
+            position: relative;
+            background-color: white;
+            color: purple;
+            margin-left: 1.25%;
+            margin-right: 1.25%;
+        }
+
+        .quote2 {
+            width: 45%;
+            height: 200px;
+            border-radius: 5px;
+            position: relative;
+            padding: 20px;
+            background-color: white;
+            color: purple;
+            margin-left: 1.25%;
+            margin-right: 1.25%;
+        }
+
+        #cent{
+            width: 90%;
+            height: 550px;
+            top: 75px;
+            border-radius: 50px;
+            margin-left: 5%;
+            margin-right: 5%;
+            background-color: white;
+            position: absolute;
+
+        }
+
+        #extinfo{
+            width: 90%;
+            height: 350px;
+            top: 700px;
+            margin-left: 5%;
+            margin-right: 5%;
+            background-color: white;
+            position: absolute;
+
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <div id = "whole">
+
+        <div id="pg1">
+
+            <div id="headd">
+                <div id="logo"></div>
+                <div id="statusbar"></div>
+            </div>
+
+            <div id="wlcm"></div>
+
+        </div>
+
+        <div id="midfloaty"></div>
+
+        <div id="pg2">
+
+            <div id="hook">
+                <div id="hooktxt"></div>
+                <div id="hookpic"></div>
+            </div>
+
+            <div class="cardcontainer">
+                <div class="card">
+                    <div class = cardicons>
+                        <img src="USER.png" alt="Avatar" style="width:220px;">
+                    </div> 
+
+                    <div class="cardtext">
+                        <p>rahhhhhhhhhhhh</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class = cardicons>
+                        <img src="USER.png" alt="Avatar" style="width:220px;">
+                    </div> 
+
+                    <div class="cardtext">
+                        <p>rahhhhhhhhhhhh</p>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <div class = cardicons>
+                        <img src="USER.png" alt="Avatar" style="width:220px;">
+                    </div> 
+
+                    <div class="cardtext">
+                        <p>rahhhhhhhhhhhh</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class = cardicons>
+                        <img src="USER.png" alt="Avatar" style="width:220px;">
+                    </div> 
+
+                    <div class="cardtext">
+                        <p>rahhhhhhhhhhhh</p>
+                    </div>
+                </div>
+            </div>  
+
+            <div id="sltn">
+                <div id="sltntxt"></div>
+                <div id="sltnpic"></div>
+            </div>
+
+            <div id="numvlp">
+                <div id="numvlpnum"><p style="margin-top: -25px;">1</p></div>
+                <div id="numvlpbox"></div>
+            </div>
+
+            <div id="numvlp2">
+                <div id="numvlpnum"><p style="margin-top: -25px;">2</p></div>
+                <div id="numvlpbox"></div>
+            </div>
+
+            <div id="pstspnsrs"></div>
+
+
+
+        </div>
+
+        <div id="pg3">
+            <div id="wpas"></div>
+            <div id="cardwpas1">
+                <div class="quote"></div>
+                <div class="quote"></div>
+                <div class="quote"></div>
+                
+            </div>
+            <div id="cardwpas2">
+                <div class="quote2"></div>
+                <div class="quote2"></div>
+            </div>
+        </div>
+
+        <div id="pg4">
+            <div id="cent"></div>
+            <div id="extinfo"></div>
+        </div>
+
+
+
+
+
+    </div>
+</body>
+
+</html>
+
+
+
+
