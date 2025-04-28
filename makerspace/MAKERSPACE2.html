@@ -56,12 +56,12 @@
         #wlcm{
             text-align: center;
             color: white;
-            width: 45%;
+            width: 50%;
             top: 100px;
             height: 350px;
             position: absolute;
-            margin-left: 27.5%;
-            margin-right: 27.5%;
+            margin-left: 25%;
+            margin-right: 25%;
         }
 
         #headd{
@@ -186,14 +186,16 @@
             top:510px;
             left: 0;
             gap:5% ;
+            font-size: 22px;
+
         }
 
         #midfloaty div{
-            border-radius: 30px;
-            box-shadow: 4px 8px 8px 4px rgba(0.5,0.5,0.5,0.5);
-            width: 30%;
+            width: 33%;
             height: 150px;
             background-color: white;
+            border-radius: 30px;
+            
 
         }
 
@@ -224,6 +226,7 @@
             margin-left: 5%;
             margin-right: 5%;
             text-align: center;
+            display: flex;
 
         }
 
@@ -377,7 +380,7 @@
         .quote {
             width: 50%;
             height: 260px;
-             border-radius: 15px;
+            border-radius: 15px;
             padding: 20px;
             position: relative;
             background-color: #86520B;
@@ -392,8 +395,8 @@
         }
 
         #hooktxt{
-            width: 500px;
-            height: 300px;
+            width: 45%;
+            height: 35%;
             float: right;
             text-align: left;
             font-size: 28px;
@@ -401,16 +404,77 @@
         }
 
         #hookpic{
-            border-radius: 30px;
-            width: 500px;
-            height: 300px;
+            margin-top: 1.5%;
+            width: 45%;
+            height: 35%;
             float: left;
         }
 
+        #plates{
+            display: flex;
+            width: 100%;
+            justify-content: left;
 
-        @media only screen and (max-width: 600px) {
+        }
+
+        #fauxbutton{
+            color: #CE7D0D;
+            background-color:white ;
+            width: 35%;
+            height: 20%;
+            border-radius: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        } 
+
+        #fauxbutton2{
+            margin-left: 42.5%;
+            margin-right: 40%;
+            margin-top: 5%;
+            color: white;
+            background-color: #6239AF;
+            width: 15%;
+            height: 15%;
+            border-radius: 15px;
+        }
+
+        @media only screen and (max-height: 700px) {
+
+            #pg1{
+                height: 100%;
+            }
+
+            #pg2{
+               margin-top: 100%;
+            }
+
+            #midfloaty{
+                top: 100%;
+                height: 50%;
+            }
+
+            #pg3{
+                top: 850%;
+                height: 220%;
+            }
+
+            #pg4{
+                margin-top: 220%;
+                height: 200%;
+            }
+
+            #ce{
+                flex-wrap: wrap;
+                margin-top: 20%;
+                height: 100%
+            }
+        }
+   
+
+
+        @media only screen and (max-width: 640px) {
         /* For mobile phones: */
-        #whole,#pg1,#pg2,#pg3,#pg4,#wlcm,#headd,#logo,#logo2,#adr,#statusbar,#statusbar2,#statusbar3,#statbar,#midfloaty,#midfloaty div,#statusbar2 div,#statusbar3 div,#midfloaty div, #cent,#ce,#extinfo,#yelp,#contacts,#rights,#p2top,#p2mid,#p2bottom,#p2left,#p2right,#numvlpbox,#numvlptxt,#numvlpic,#year,#theme,#wpas,#cardwpas1,#cardwpas2,.quote,#hooktxt,#hookpic{
+        #whole,#pg1,#pg2,#pg3,#pg4,#wlcm,#headd,#logo,#logo2,#adr,#statusbar,#statusbar2,#statusbar3,#statbar,#midfloaty,#midfloaty div,#statusbar2 div,#midfloaty div, #cent,#ce,#extinfo,#yelp,#contacts,#rights,#p2top,#p2mid,#p2bottom,#p2left,#p2right,#numvlpbox,#numvlptxt,#numvlpic,#year,#theme,#wpas,#cardwpas1,#cardwpas2,.quote,#hooktxt,#hookpic{
 
             width: 100%;
             margin-left: 0%;
@@ -423,6 +487,59 @@
         #p2left{
             display: none;
         }
+
+        #pg4{
+            top: 500%;
+        }
+
+        #cardwpas2{
+            margin-top: 53%;
+        }
+
+        #pg2{
+            top: 120%;
+            height: 270%;
+        }
+
+        #pg3{
+            top: 390%;
+        }
+
+        #hooktxt{
+            margin-top: -45%;
+        }
+
+        #hookpic{
+            margin-top: 50%;
+        }
+
+        #statusbar2 div{
+            width: 100%;
+        }
+
+        #statusbar div{
+            width: 30%;
+        }
+
+
+        #contacts{
+            margin-top: 50%;
+        }
+
+        #ce{
+            visibility: hidden;
+        }
+
+        #fauxbutton{
+            width: 100%;
+        }
+
+        #fauxbutton2{
+            width: 100%;
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+
 
 
 
@@ -449,17 +566,37 @@
             </div>
 
             <div id="wlcm">
-                <b><p style="font-size: 48px;">More Than Robots</p></b>
-                <b><p style="font-size: 48px;margin-top: -50px;color: orange;">A Movement</p></b>
-                <p style="font-size:20px; margin-top:-25px;">SST Makerspace is your launchpad for building change.<br>Come explore, build, and experience what happens when creativity meets engineering.</p>
+                <b><p style="font-size: 54px;">EXPLORING THE FUTURE</p></b>
+                <p style="font-size:20px; margin-top:-25px;">SST Makerspace is your launchpad for building change. Come explore, build, and experience what happens when creativity meets engineering.</p>
             </div>
 
         </div>
 
         <div id="midfloaty">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div id="plates" style="box-shadow: 4px 8px 8px 4px rgba(0.5,0.5,0.5,0.5);">
+                <div style="width:20%"></div>
+                <div style="width:80%">
+                    <p style="color:grey;font-size: 16px;">When?</p>
+                    <p>12 Aug 2024, 9:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+
+            <div id="plates" style="box-shadow: 4px 8px 8px 4px rgba(0.5,0.5,0.5,0.5);">
+                <div style="width:20%"></div>
+                <div style="width:80%">
+                    <p style="color:grey;font-size: 16px;">Where?</p>
+                    <p>School of Science and Technology, Pan-Atlantic University</p>
+                </div>
+            </div>   
+
+            <div id="plates" style="box-shadow: 4px 8px 8px 4px rgba(0.5,0.5,0.5,0.5);">
+                <div style="width:20%"></div>
+                <div style="width:80%">
+                    <p style="color:grey;font-size: 16px;">For Who?</p>
+                    <p>Engineers & Computer Scientists</p>
+                </div>
+            </div>
+
         </div>
 
         <div id="pg2">
@@ -506,10 +643,11 @@
             <div id="p2bottom">
                 <br>
                 <div id="ce">
+                    <div id="hookpic"><img src="event.png" alt="Avatar" style="width:65%; height: 250%;border-radius: 50%;"></div>
+                    <br>
                     <div id="hooktxt">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-                    <div id="hookpic"><img src="event.png" alt="Avatar" style="width:500px; height: 300px;"></div>
                 </div>                    
 
                 </div>
@@ -524,26 +662,58 @@
             <div id="cardwpas1">
                 <div class="quote">
                     <img src="quote.png" style="width:25px; height: 25px;">
-                    <p>Workshop Sessions</p>
+                    <p style="font-size:24px;font-weight: bold;">Workshop Sessions</p>
                     <p style="margin-top: -10px;">The Planning committee conducts a certain number of workshops to prepare students for the competition. The topic and number of workshops is determined by the committee.</p>
+
+                    <div id="fauxbutton">
+                        <br>
+                        <p style="margin-top: -5%;margin-left: 5%;">
+                            REGISTER NOW
+                        </p>
+                    </div>  
+
                 </div>
                 <div class="quote">
                     <img src="quote.png" style="width:25px; height: 25px;">
-                    <p>Build Your Team</p>
+                    <p style="font-size:24px;font-weight: bold;">Build Your Team</p>
                     <p style="margin-top: -10px;">Teams of 3 are formed to compete in the event. Teams comprise students of the School of Science and Technology.</p>
+
+                    <div id="fauxbutton">
+                        <br>
+                        <p style="margin-top: -5%;margin-left: 5%;">
+                            REGISTER NOW
+                        </p>
+                    </div>
+
                 </div>
                 
             </div>
             <div id="cardwpas2">
                 <div class="quote">
                     <img src="quote.png" style="width:25px; height: 25px;">
-                    <p>Mock Competition & Qualifiers</p>
+                    <p style="font-size:24px;font-weight: bold;">Mock Competition & Qualifiers</p>
                     <p style="margin-top: -10px;">Only the best applicants are allowed to compete. The quality of the bots is used to determine the final competitors.</p>
+
+                    <div id="fauxbutton">
+                        <br>
+                        <p style="margin-top: -5%;margin-left: 5%;">
+                            REGISTER NOW
+                        </p>
+                    </div>
+
                 </div>
                 <div class="quote" >
                     <img src="quote.png" style="width:25px; height: 25px;">
-                    <p>Main Competition Event</p>
+                    <p style="font-size:24px;font-weight: bold;">Main Competition Event</p>
                     <p style="margin-top: -10px;">Qualified teams race against each other to determine the overall winner of the competition.</p>
+
+                    <div id="fauxbutton">
+                        <br>
+                        <p style="margin-top: -5%;margin-left: 5%;">
+                            REGISTER NOW
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </div>            
@@ -552,6 +722,15 @@
             <div id="cent">
                 <b><p style="font-size:56px;color: #6239AF;margin-top: 100px;">Ready to make a change?</p></b>
                 <p style="font-size:28px;color:grey ;margin-top: 75px;">Let us join hands in inspiring the young minds that will go on to<br> transform the hardware space, building products that can<br>compete in the global market.</p>
+
+                    <div id="fauxbutton2">
+                        <br>
+                        <p style="margin-top: -7.5%;margin-left: 5%;">
+                            <br>
+                            REGISTER NOW
+                        </p>
+                    </div>
+
             </div>
 
             <div id="extinfo">
